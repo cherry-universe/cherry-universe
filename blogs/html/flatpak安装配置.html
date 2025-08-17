@@ -5,15 +5,15 @@
 	<link href="../../style/base.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="main-layout">
 		<div class="title-layout">
 			<h3 class="title-style">
 				flatpak安装配置
 			</h3>
 		</div>
-		<div class="second-node-base" style="width: 80%;">
+	<div class="main-layout">
+		<div class="second-node">
 			<p><strong>安装</strong></p>
-			<p>Debian GNU/Linux</p>
+			<p>Debian</p>
 			<code>[sudo] apt [-y] install flatpak</code>
 			<p>Ubuntu/Linux Mint</p>
 			<code>sudo apt install [-y] flatpak</code>
@@ -23,5 +23,27 @@
 			<code>搁服务器上装个屁flatpak</code>
 			<p>Arch Linux</p>
 			<code>[sudo] pacman -S flatpak</code>
+			<p>Gentoo/LFS/NixOS</p>
+			<code>我不信你不会装 <small style="color: black;">其实是我不会</small></code>
+			<p>MacOS</p>
+			<code>MacOS上装个屁 <small>非要装就用docker</small></code>
+			<p>Windows</p>
+			<code>你都用Windows了那你用个屁包管理器 <small>WSL可以装</small></code>
+			<p>Android</p>
+			<code>？？？ <small>可以用Termux proot</small></code>
+			<p>iOS</p>
+			<code>滚</code>
+			<hr />
+			<p><strong>镜像源配置</strong></p>
+			<code>flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo</code>
+			<code>flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub</code>
+			<hr />
+			<p><strong>使用</strong></p>
+			<p>安装软件包</p><code>flatpak install [-y] flathub xxx</code>
+			<p>xxx是要安装软件包的名称</p>
+			<p>卸载软件包</p><code>flatpak uninstall [--delete-data] [-y]</code>
+			<p><code>--delete-data</code>是把用户数据一块删掉</p>
+			<p>卸载未使用的运行时</p><code>flatpak uninstall --unused</code>
+			<p>查看已安装的包列表</p><code>fltapak list</code>
 		</div>
 	</div>
