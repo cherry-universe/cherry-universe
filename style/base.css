@@ -32,7 +32,7 @@
 	align-items: center;
 }
 body {
-	background: url('../img/abc.png')/* no-repeat*/ center center fixed;
+	background: url('../img/abc.png') no-repeat center center fixed;
 	background-size: auto;
 	font-family: serif;
 }
